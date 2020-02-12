@@ -28,7 +28,16 @@ function App() {
             <div className="away__score">{awayScore}</div>
           </div>
         </div>
-        <BottomRow />
+        <BottomRow
+          down={down}
+          setDown={setDown}
+          toGo={toGo}
+          setToGo={setToGo}
+          ballOn={ballOn}
+          setBallOn={setBallOn}
+          quarter={quarter}
+          setQuarter={setQuarter}
+        />
         <Buttons
           homeScore={homeScore}
           setAwayScore={setAwayScore}
